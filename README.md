@@ -4,14 +4,15 @@ Projeto em contrução
 
 #Desenvolvimento
 
-KandaFramework MVC
+KandaFramework PHP
 
 https://github.com/KandaFramework/kandaframework
 
-#Requiridos
+#Requerimentos
 
-php 5.6 
+PHP 5.6, conhecimentos em namespace autoload e arquitetura MVC
 
+ 
 #Rodando o projeto
 
 php -S 0.0.0.0:8888 -t public
