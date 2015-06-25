@@ -1,0 +1,244 @@
+
+.menu_block  {
+	z-index: 999;
+	position: relative;
+	float: left;
+}
+
+
+.menu_block nav {
+	position: relative;
+}
+
+
+nav>.sf-menu {
+	z-index: 990;
+	text-align: left;
+	position: relative;
+}
+nav{ position:relative;padding: 0px 0 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	display: block;
+	position: relative;
+	float: left;
+	font-size: 16px;
+	line-height: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.sf-menu>li+li {
+	margin-left: 16px;
+}
+
+.sf-menu>li+li+li {
+	margin-left: 24px;
+}
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a{
+	font-weight: normal;
+	text-align: center;
+	position: relative;
+	color: #fff;
+	display: block;
+	padding: 11px 27px 13px 26px;
+}
+
+.sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li>a:hover {
+	background-color: #4cddf3;
+}
+
+
+/*.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 50%;
+	margin-left: -3px;
+	width: 5px;
+	background: url(../images/arrows.png) 0 bottom no-repeat;
+	height: 4px;
+	bottom: 15px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li.current>a.sf-with-ul:after, 
+.sf-menu>li.sfHover>a.sf-with-ul:after {
+	background-position: 0 0;
+}*/
+
+.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 50%;
+	margin-left: -4px;
+	height: 4px;
+	bottom: 7px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: #ffffff transparent transparent transparent;
+}
+ 
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+    font-family: 'FontAwesome';
+	position: absolute;
+	width: 5px;
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal;
+	right: 15px;
+	color: #fff;
+	bottom: 12px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+
+
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	left: 0;
+	z-index: 999; 
+	width: 104px;
+	padding-top: 12px;
+	background-color: #27384a;
+	top: 52px;
+	padding-bottom: 14px;
+
+}
+
+
+
+.sf-menu li ul li {
+	position: relative;
+	text-align: left;
+	float: none !important;
+	font-size: 12px;
+	line-height: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 12px;
+}
+
+.sf-menu li ul li+li {
+}
+
+
+
+.sf-menu li ul li a{
+	position: static;
+	z-index: 999;
+	text-transform: uppercase;
+	color: #fff;	
+	font-weight: normal;
+}
+
+
+
+
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	font-weight: bold;
+}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu li.sfHover li.sfHover ul{
+	position: absolute;
+	left: 104px;
+	padding-top: 5px;
+	padding-bottom: 0;	
+	background-color: #4cddf3;
+	top: 2px;
+}
+
+.sf-menu li ul ul li  {
+	line-height: 30px;
+	padding-left: 16px;
+}
+
+.sf-menu li ul ul li a {
+}
+
+.sf-menu li ul ul li a:hover {
+	color: #010101;
+}
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+
+@media only screen and (max-width: 995px) {
+
+
+	.sf-menu>li+li{
+		margin-left: 0 !important;
+	}
+
+	.sf-menu>li>a {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		padding: 20px 0px 20px !important;
+		clear: both;
+		margin: 0;
+		min-height: 0px;
+	}
+
+
+  .menu_block  nav{
+  	border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;
+		padding-left: 0 !important;
+		
+	
+	}
+
+
+	
+
+  header nav ul {
+  	border: none;
+  }
+
+	.sf-menu{display:none !important; float: none;}
+
+	.select-menu {
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#202020;
+		width:100%;
+		margin: 0 auto;
+		float: none;
+	    outline: none;
+	    display: block !important;
+		border:2px solid #fff;
+	}
+	
+
+}
