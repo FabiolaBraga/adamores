@@ -36,13 +36,18 @@
         </nav>
         
 
-        <div class="container" style="margin-top:50px;">
+        <div class="container" style="margin-top: 50px; margin-bottom: 20px;">
  
         <?php echo $content ?>
 
         </div><!-- /.container -->
+
         <footer>
             
+            <div class="container">
+             <a href="<?php echo $this->createUrl('painel')?>">painel</a>
+            </div> 
+ 
         </footer>
         <script type="text/javascript" src="<?php echo $this->assets($theme) ?>js/jquery-1.10.1.min.js"></script>
         <script type="text/javascript" src="<?php echo $this->assets($theme) ?>js/bootstrap.min.js"></script>
