@@ -4,25 +4,25 @@
         <title><?php echo $this->title ?></title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="<?php echo $this->assets($theme) ?>css/bootstrap.min.css">
-      <link rel="stylesheet" href="<?php echo $this->assets($theme) ?>css/coin-slider-styles.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo $this->assets($theme) ?>css/coin-slider-styles.css" type="text/css" />
        <link type="text/css" rel="stylesheet" href="<?php echo $this->assets($theme) ?>css/estilo1.css"/>
+       <link type="text/css" rel="stylesheet" href="<?php echo $this->assets($theme) ?>css/stylesloginmodal.css"/>  
     </head>
     <body>
         
         <header>
-          
-
+        <div id="logo">
+          <img src="<?php echo $this->assets($theme) ?>images/logo.png" width="380" />
+        </div>
 
         </header>
-       <nav class="navbar navbar-inverse navbar-fixed-top">
+       <nav class="">
             <div class="container">
                 <div class="navbar-header">
-                     
-                     
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                         <li class='active'><a href='<?php echo $this->createUrl() ?>'><span>Home</span></a></li>
+                     <li class='active'><a href='<?php echo $this->createUrl() ?>'><span>Home</span></a></li>
                      <li><a href='<?php echo $this->createUrl('sobre') ?>'><span>Sobre</span></a></li>
                      <li><a href='#'><span>Aulas</span></a></li>
                      <li class='last'><a href='<?php echo $this->createUrl('professor')?>'><span>Professores</span></a></li>
