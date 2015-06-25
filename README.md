@@ -1,3 +1,3 @@
-# kandaFramework
+# Adamore
 
-KandaFramework MVC
+Projeto em contrução
