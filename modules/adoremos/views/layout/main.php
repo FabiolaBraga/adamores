@@ -22,12 +22,12 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                         <li class='active'><a href='index.php'><span>Home</span></a></li>
-     <li><a href=''><span>Sobre</span></a></li>
-     <li><a href='#'><span>Aulas</span></a></li>
-     <li class='last'><a href='#'><span>Professores</span></a></li>
-     <li><a href='#'><span>Serviços</span></a></li>
-     <li><a href='#'><span>Contatos</span></a></li>
+                         <li class='active'><a href='<?php echo $this->createUrl() ?>'><span>Home</span></a></li>
+                     <li><a href='<?php echo $this->createUrl('sobre') ?>'><span>Sobre</span></a></li>
+                     <li><a href='#'><span>Aulas</span></a></li>
+                     <li class='last'><a href='<?php echo $this->createUrl('professor')?>'><span>Professores</span></a></li>
+                     <li><a href='#'><span>Serviços</span></a></li>
+                     <li class='active'><a href='<?php echo $this->createUrl('contato')?>'><span>Contatos</span></a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -41,5 +41,14 @@
         <footer>
             
         </footer>
+
+        <script type="text/javascript" src="<?php echo $this->assets($theme) ?>js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->assets($theme) ?>js/coin-slider.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->assets($theme) ?>js/loginmoal.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#coin-slider').coinslider({ width: 1000,height:400, navigation:true,effect:'rain', delay: 5000,hoverPause: true });
+  });
+</script>
     </body>
 </html>

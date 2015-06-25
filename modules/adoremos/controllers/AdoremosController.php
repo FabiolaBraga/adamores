@@ -22,7 +22,15 @@ public function actionContato() {
                 return $this->render('contato');
     }
 
+    public function actionSobre() {
 
+                return $this->render('sobre');
+    }
+ 	
+     public function actionProfessor() {
+
+                return $this->render('professor');
+    }
 
       
 }
