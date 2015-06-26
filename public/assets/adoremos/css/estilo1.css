@@ -18,7 +18,9 @@
 	}
 
 header {	
- 	height:185px;
+	background-color:#000;
+	width:auto;
+	height:185px;
 	}
 #login{
 	position:absolute;

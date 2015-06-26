@@ -99,7 +99,8 @@ class Kanda{
   
 
         ActiveRecord\Config::initialize(function($cfg) {
-              $cfg->set_connections(array(
+            $cfg->set_model_directory(MODEL);
+            $cfg->set_connections(array(
                 'development' => DSN));
         });
 

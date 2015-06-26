@@ -19,12 +19,12 @@ return $main = [
     ],
     'modules' => [
         'db' => [
-            'dsn' => 'mysql://root:linux321@localhost/adoremos',
+            'dsn' => 'mysql://kanda:linux321@localhost/kanda',
         ],
         'model' => '/models/',
         'controller' => '/controllers/',
         'view' => [
-               ['adoremos','painel'],
+               ['adoremos'],
         ],
         'timezone' => 'America/Sao_Paulo',
         'dirAlias' => '',

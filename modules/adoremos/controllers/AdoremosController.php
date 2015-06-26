@@ -26,14 +26,10 @@ public function actionContato() {
 
                 return $this->render('sobre');
     }
-    public function actionAulas() {
-
-                return $this->render('aulas');
-    }
  	
-     public function actionProfessorres() {
+     public function actionProfessor() {
 
-                return $this->render('professores');
+                return $this->render('professor');
     }
 
       
