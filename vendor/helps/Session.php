@@ -100,7 +100,8 @@ class Session {
         $script = '';
         if (isset($_SESSION[$key]) && $_SESSION[$key] == $key) {
 
-           $script = "<script> $(window).load(function(){ $('#alertShow').attr({'data-noty-options':'{\"text\":\"{$_SESSION['message'][$key]}\",\"layout\":\"$layout\",\"type\":\"{$_SESSION['type'][$key]}\"}'}).click(); }); </script>";
+          # $script = "<script> $(window).load(function(){ $('#alertShow').attr({'data-noty-options':'{\"text\":\"{$_SESSION['message'][$key]}\",\"layout\":\"$layout\",\"type\":\"{$_SESSION['type'][$key]}\"}'}).click(); }); </script>";
+           $script = "<script> Alert('{$_SESSION['type'][$key]}','{$_SESSION['message'][$key]}'); </script>";
         }
         unset($_SESSION[$key], $_SESSION['title'][$key], $_SESSION['type'][$key]);
         return $script;
