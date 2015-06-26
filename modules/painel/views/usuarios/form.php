@@ -22,8 +22,7 @@ use helps\Session;
                 echo $form->textFieldGroup('nome');
                 echo $form->textFieldGroup('login');
                 echo $form->textFieldGroup('email');
-                echo $form->textFieldGroup('browser');
-                echo $form->textFieldGroup('senha',['value' => '123'], 'password');
+                 echo $form->textFieldGroup('senha',['value' => '123'], 'password');
            
                 ?>
                 <div class="form-actions">
