@@ -20,7 +20,7 @@ class Usuario extends \ActiveRecord\Model {
         return [
             [['nome','login','senha','confirm_senha'],'required'],
             ['email','email','required','message'=>'Obrigatório','error'=>'Email inválido'],
-            #['id', 'integer', 'required', 'message' => 'Obrigatório', 'error' => 'Somente número inteiros'],
+            ['browser', 'integer', 'required', 'message' => 'Obrigatório', 'error' => 'Somente número inteiros'],
             #['email', 'email', 'required', 'message' => 'Obrigatório', 'error' => 'E-mail inválido'],
             #['foto', 'file', 'required','extension'=>"pdf|png|jpg", 'message' => 'Obrigatório', 'error' => 'Somente pdf, png, jpg'],
         ];
@@ -29,13 +29,15 @@ class Usuario extends \ActiveRecord\Model {
     public static function attributeLabels() {
 
         return [
-            'nome' => 'Nome',
+         'id' => 'Código',
+           'nome' => 'Nome',
             'login' => 'Login',
             'user_id' => 'Código',
             'senha' => 'Senha',
             'nivel_id' => 'Nível',
             'confirm_senha' => 'Confirmar senha',
             'email'=>'Email',
+            'browser'=>'Navegador'
              
         ];
     }

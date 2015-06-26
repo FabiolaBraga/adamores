@@ -1,5 +1,5 @@
 <?php
-$this->title = 'Usuários';
+$this->title = 'Aulas';
 
 use widgets\FormWidget;
 use helps\Url;
@@ -20,11 +20,7 @@ use helps\Session;
                 $form = FormWidget::widget($model, [ 'style' => "\help\Style",]);
 
                 echo $form->textFieldGroup('nome');
-                echo $form->textFieldGroup('login');
-                echo $form->textFieldGroup('email');
-                echo $form->textFieldGroup('browser');
-                echo $form->textFieldGroup('senha',['value' => '123'], 'password');
-           
+                     
                 ?>
                 <div class="form-actions">
                     <button class="btn btn-success" type="submit">Enviar</button>

@@ -142,6 +142,7 @@ class GridView extends AbstractWidget {
 
             ++$i;
         }
+        $tfoot = '';
 
         if (!$param['dataTable'] && isset($param['dataTable'])) {
             $li = '';

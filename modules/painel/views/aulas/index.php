@@ -1,10 +1,9 @@
 <?php
-$this->title = 'Usuários';
+$this->title = 'Aulas';
 
 use helps\Url;
 use helps\Session;
 use widgets\GridView;
-use painel\models\Nivel;
 ?>
 <div class="module">
     <div class="module-head">
@@ -21,9 +20,7 @@ use painel\models\Nivel;
                                 'classTable'=>'table',
                                 'columns' => [
                                             'id',
-                                            'nome',
-                                            'login',
-                                            'email',                                            
+                                            'nome',                                                                                        
                                         ],
                                         'actionColumns' => ['update', 'delete'],
                                     ]);

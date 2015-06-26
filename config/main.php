@@ -19,7 +19,7 @@ return $main = [
     ],
     'modules' => [
         'db' => [
-            'dsn' => 'mysql://root:linux321@localhost/adoremos',
+            'dsn' => 'mysql://root:@localhost/adoremos', //Aqui a configuraço para o banco de dados!
         ],
         'model' => '/models/',
         'controller' => '/controllers/',

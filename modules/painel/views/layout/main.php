@@ -97,6 +97,7 @@ use helps\Session;
                             <ul class="widget widget-menu unstyled">
                                 <li class="active"><a href="<?php echo $this->createUrl('painel') ?>"><i class="menu-icon icon-dashboard"></i>Dashboard
                                 </a></li>
+                                <li><a href="<?php echo $this->createUrl('painel/aulas') ?>"><i class="menu-icon icon-picture"></i>Aulas</a></li>                        
                                 <li><a href="<?php echo $this->createUrl('painel/banner') ?>"><i class="menu-icon icon-picture"></i>Banner</a></li>                        
                                 <li><a href="<?php echo $this->createUrl('painel/contatos') ?>"><i class="menu-icon icon-envelope"></i>Contatos </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/galerias') ?>"><i class="menu-icon icon-camera"></i>Galerias </a></li>
