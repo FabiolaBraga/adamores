@@ -9,33 +9,21 @@ $this->title = 'Adoremos Escola De Musica';
 
 <div class="row grid">
 
+<?php 
+  foreach ($servico as $data):
+  
+?>
 <div class="col-md-4">
    <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
    <div class="texto">
-    <span>Regulamento</span>
+    <span><?php echo $data->nome ?></span>
     <p>
-      Trabalho com violão a mais de um ano!!!
+     <?php echo $data->descricao ?>
     </p>
 </div>
 </div>
-<div class="col-md-4">
- <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
- <div class="texto">
-  <span>Regulamento</span>
-  <p>
-    Trabalho com violão a mais de um ano!!!
-  </p>
-</div>
-</div>
-<div class="col-md-4">
- <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
- <div class="texto">
-  <span>Regulamento</span>
-  <p>
-    Trabalho com violão a mais de um ano!!!
-  </p>
-</div>
-</div>
+<?php endforeach ?>
+ 
 
 </div><!-- row-->
 
