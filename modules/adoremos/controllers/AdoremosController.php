@@ -9,15 +9,11 @@
 
 namespace adoremos\controllers;
 
-use painel\models\Servico;
-
 class AdoremosController extends \app\Controller {
 
     public function actionIndex() {
 
-                $servico = Servico::all();
-
-                return $this->render('index',['servico'=>$servico]);
+                return $this->render('index');
     }
 
 
