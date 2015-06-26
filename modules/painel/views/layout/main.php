@@ -101,11 +101,15 @@ use helps\Session;
                                 <li><a href="<?php echo $this->createUrl('painel/banner') ?>"><i class="menu-icon icon-picture"></i>Banner</a></li>                        
                                 <li><a href="<?php echo $this->createUrl('painel/contatos') ?>"><i class="menu-icon icon-envelope"></i>Contatos </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/galerias') ?>"><i class="menu-icon icon-camera"></i>Galerias </a></li>
+                                 
+                            </ul>
+                            <ul class="widget widget-menu unstyled">
                                 <li><a href="<?php echo $this->createUrl('painel/Servicos') ?>"><i class="menu-icon icon-hand-up"></i>Serviços </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/sobre') ?>"><i class="menu-icon icon-hand-up"></i>Sobre </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/usuarios') ?>"><i class="menu-icon icon-user"></i>Usuários </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/videos') ?>"><i class="menu-icon icon-camera"></i>Vídeos</a></li>
                             </ul>
+
                             <!--/.widget-nav-->
  
                         </div>
