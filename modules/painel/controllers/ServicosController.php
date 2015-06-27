@@ -56,9 +56,13 @@ class ServicosController extends \app\Controller {
 
         $model = new Servico();
 
-        if (\Kanda::$request->post($model) && $model->save()) {
+        if (\Kanda::$request->post($model)){
 
-               Session::setflash('update', 'Cadastrado com sucesso');
+
+               //Session::setflash('update', 'Cadastrado com sucesso');
+            $this->uploadimagens();
+            exit;
+
 
             return $this->redirect('update', ['id' => $model->id]);
         } else {
@@ -88,6 +92,17 @@ class ServicosController extends \app\Controller {
             $model = Servico::find($id);
             return $model;
         }
+    }
+
+    public function uploadimagens(){
+        
+        $uploaddir = '../wamp/www/adoremosOO/public/assets/adoremos/images/';
+        print_r($_FILES);
+        $uploadfile = $uploaddir . $_FILES['Servico[imagem]']['name'];
+
+        if (move_uploaded_file($_FILES['Servico[imagem]']['tmp_name'], $uploadfile)){
+        echo "Arquivo Enviado";}
+        else {echo "Arquivo não enviado";}
     }
 
 }

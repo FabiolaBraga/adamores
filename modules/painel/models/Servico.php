@@ -17,7 +17,7 @@ class Servico extends \ActiveRecord\Model {
     public static function rules() {
 
         return [
-            [['nome','descricao'],'required'],              
+            [['nome','descricao','imagem'],'required'],              
         ];
     }
 
@@ -26,7 +26,8 @@ class Servico extends \ActiveRecord\Model {
         return [
            'id' => 'Código',
            'nome' => 'Nome',
-           'descricao'=> 'descricao',          
+           'descricao'=> 'Descricao', 
+           'imagem'=> 'Imagem'         
              
         ];
     }
