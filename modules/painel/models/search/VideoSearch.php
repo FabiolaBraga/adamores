@@ -15,7 +15,7 @@ class VideoSearch extends Video{
     public static function dataProvider(){
      
     return array_merge(
-                       ['data'=>parent::find('all',['select'=>'nome,id'])],
+                       ['data'=>parent::find('all',['select'=>'nome,id,descricao'])],
                        parent::attributeLabels(),['primary_key'=>parent::$primary_key, ]
             );
              

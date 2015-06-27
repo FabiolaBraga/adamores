@@ -19,6 +19,7 @@ class Video extends \ActiveRecord\Model {
 
         return [
                  [['nome','video'],'required'],
+                 ['foto','descricao','varchar'],
         ];
     }
 
@@ -27,6 +28,7 @@ class Video extends \ActiveRecord\Model {
         return [
             'nome' => 'Nome',
             'video' => 'Link do youtube',
+            'descricao' => 'Descrição'
         ];
     }
 
