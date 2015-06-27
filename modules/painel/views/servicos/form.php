@@ -20,20 +20,17 @@ use helps\Session;
 
                 echo $form->textFieldGroup('nome');
                 echo $form->textareaFildGroup('descricao');
-                echo $form->fileFieldGroup('imagem');
- 
+                 
+           
                 ?>
                 <div class="form-actions">
                     <button class="btn btn-success" type="submit">Enviar</button>
                 </div>
 
             </fieldset>
-
+        </form> 
         <?php
         echo Session::getflash('update');
-        ?>    
-
-        </form> 
-
+        ?>       
     </div>
 </div>

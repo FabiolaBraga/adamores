@@ -23,7 +23,6 @@ use painel\models\Nivel;
                                             'id',
                                             'nome',
                                             'descricao',
-                                            'imagem',
                                                                                     
                                         ],
                                         'actionColumns' => ['update', 'delete'],
