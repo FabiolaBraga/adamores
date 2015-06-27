@@ -14,7 +14,7 @@ $this->title = 'Adoremos Escola De Musica';
   
 ?>
 <div class="col-md-4">
-   <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
+   <img  src="<?php echo $this->assets($theme) ?>images/servicos/<?php echo $data->imagem ?>">
    <div class="texto">
     <span><?php echo $data->nome ?></span>
     <p>

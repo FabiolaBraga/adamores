@@ -56,11 +56,20 @@ class ServicosController extends \app\Controller {
 
         $model = new Servico();
 
-        if (\Kanda::$request->post($model) && $model->save()) {
+        if (\Kanda::$request->post($model)){
 
-               Session::setflash('update', 'Cadastrado com sucesso');
+            $model->imagem = $this->uploadimagens($model->nome);
 
-            return $this->redirect('update', ['id' => $model->id]);
+            if ($model->save()) { 
+                  
+                  Session::setflash('update', 'Cadastrado com sucesso');
+
+                 return $this->redirect('update', ['id' => $model->id]);
+
+            } else 
+                 return $this->render('form', ['model' => $model]);
+
+
         } else {
             return $this->render('form', ['model' => $model]);
         }
@@ -90,4 +99,27 @@ class ServicosController extends \app\Controller {
         }
     }
 
-}
+    public function uploadimagens($name){
+        
+        $uploaddir = WWW_ROOT.'/public/assets/adoremos/images/servicos/';
+        $uploaddir = str_replace("/", DS, $uploaddir);
+     
+        if (!is_dir($uploaddir)){
+                echo("diretorio não encontrado");
+                exit;
+        }
+        $type = end(explode("/", $_FILES['Servico']['type']['imagem']));
+        $uploadfile = $uploaddir . $name.".".$type;
+
+        if (move_uploaded_file($_FILES['Servico']['tmp_name']['imagem'], $uploadfile))
+            return $name.".".$type;
+        else
+             throw new Exception("erro para mover arquivo", 1);
+             
+
+
+     
+     }
+
+    
+} 
