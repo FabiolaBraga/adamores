@@ -12,13 +12,19 @@ namespace adoremos\controllers;
 
 use painel\models\Servico;
 
+use painel\models\Video;
+
 class AdoremosController extends \app\Controller {
 
     public function actionIndex() {
 
                 $servico = Servico::all();
-                return $this->render('index',['servico'=>$servico]);
-    }
+                 $video = Video::all();
+                //o return ele retorna! No paga o que tem abaixo dele
+                return $this->render('index',['video'=>$video,'servico'=>$servico]);
+
+                
+            }
 
 
 public function actionContato() {

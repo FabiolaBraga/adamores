@@ -30,34 +30,25 @@ $this->title = 'Adoremos Escola De Musica';
 <br/>
 
 <div class="row">
-
+<?php 
+  foreach ($video as $data):
+  
+?>
 <div class="col-md-4">
-   <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
+   <img  src="<?php echo $this->assets($theme) ?>images/video/<?php echo $data->foto ?>">
    <div class="texto">
-    <span>Regulamento</span>
+    <span><?php echo $data->nome ?></span>
     <p>
-      Trabalho com violão a mais de um ano!!!
+     <?php echo $data->descricao ?>
+    </p>
+    <p>
+     <?php echo $data->video ?>
     </p>
 </div>
 </div>
-<div class="col-md-4">
- <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
- <div class="texto">
-  <span>Regulamento</span>
-  <p>
-    Trabalho com violão a mais de um ano!!!
-  </p>
-</div>
-</div>
-<div class="col-md-4">
- <img  src="<?php echo $this->assets($theme) ?>images/regulagem1.png">
- <div class="texto">
-  <span>Regulamento</span>
-  <p>
-    Trabalho com violão a mais de um ano!!!
-  </p>
-</div>
-</div>
+<?php endforeach ?>
+
+
   
 </div>
 

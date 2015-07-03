@@ -18,8 +18,8 @@ class Video extends \ActiveRecord\Model {
     public static function rules() {
 
         return [
-                 [['nome','video'],'required'],
-                 ['foto','descricao','varchar'],
+                 [['nome','video','descricao'],'required'],
+                 ['foto','varchar'],
         ];
     }
 

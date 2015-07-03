@@ -107,7 +107,7 @@ use helps\Session;
                                 <li><a href="<?php echo $this->createUrl('painel/Servicos') ?>"><i class="menu-icon icon-hand-up"></i>Serviços </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/sobre') ?>"><i class="menu-icon icon-hand-up"></i>Sobre </a></li>
                                 <li><a href="<?php echo $this->createUrl('painel/usuarios') ?>"><i class="menu-icon icon-user"></i>Usuários </a></li>
-                                <li><a href="<?php echo $this->createUrl('painel/videos') ?>"><i class="menu-icon icon-camera"></i>Vídeos</a></li>
+                                <li><a href="<?php echo $this->createUrl('painel/video') ?>"><i class="menu-icon icon-camera"></i>Vídeos</a></li>
                             </ul>
 
                             <!--/.widget-nav-->
